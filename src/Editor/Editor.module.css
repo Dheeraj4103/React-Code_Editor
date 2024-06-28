@@ -1,0 +1,75 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  .editorContainer {
+    position: relative;
+    width: 500px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0px;
+    
+  }
+  
+  /* css for textarea */
+  .editor {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    margin: 0.5em 0em;
+    padding: 1em ;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    /* make the textarea transparent, so that we can see highlighted syntax */
+    background: transparent; 
+    color: transparent;
+    caret-color: white;
+    /* css for wrapping text */
+    white-space: pre-wrap;
+    word-break: keep-all; 
+    overflow-wrap: break-word;
+    resize: none; 
+    outline: none;
+    /* making position absolute so that we can overlay highlighted text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+    box-sizing: border-box;
+    
+  }
+
+  
+  
+  .highlightedCode {
+    /* same properties as textarea so that we can overlay this on textarea */
+    margin: 0.5em;
+    padding: 1em 0.5em;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #f8f8f2;
+    pointer-events: none; /* Make sure this doesn't block textarea clicks */
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrollbar in pre */
+    box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+  }
+  
