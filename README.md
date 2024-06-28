@@ -2,9 +2,9 @@
 
 ### This is a simple JavaScript code editor.
 
-![Screenshot](Screenshot.png)
+![Screenshot](Screenshot.png =300x300)
 
-![link]()
+![link](https://react-code-editor-inky.vercel.app/)
 
 ## Install dependencies
 
